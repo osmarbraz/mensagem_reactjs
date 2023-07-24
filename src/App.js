@@ -28,7 +28,7 @@ class FrmMensagem extends Component {
       
       //Recupera e atualiza a mensagem anterior antes de enviar a nova mensagem
       //fetch(`http://localhost:8000/mensagem`)
-      fetch(`https://mensagem-nodejs.vercel.app:8000/mensagem`)      
+      fetch(`https://mensagem-nodejs.vercel.app/mensagem`)      
         .then((response) => response.json()) //Converte a resposta para JSON
         .then((data) => { //Recupera a resposta
             this.setState({mensagemAnterior : data.mensagem}); // Atribui a resposta ao estado
@@ -38,7 +38,7 @@ class FrmMensagem extends Component {
       const { mensagem } = this.state;      
       // Envia a mensagem nova para o servidor
       //fetch(`http://localhost:8000/mensagempath/${mensagem}`)
-      fetch(`https://mensagem-nodejs.vercel.app:8000/mensagempath/${mensagem}`)
+      fetch(`https://mensagem-nodejs.vercel.app/mensagempath/${mensagem}`)
         .then((response) => response.json()) //Converte a resposta para JSON
         .then((data) => { //Recupera a resposta
             this.setState({resposta : data.mensagem}); // Atribui a resposta ao estado
