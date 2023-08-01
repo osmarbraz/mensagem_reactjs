@@ -59,9 +59,8 @@ class FrmMensagem extends Component {
             <label>Nova mensagem: 
             <input type="text" name="mensagem" value={this.state.mensagem} onChange={this.handleInputChange}/>
             </label><br/>
-              <input type="button" value="Limpar" onClick={this.limpar} />
-              <input type="submit" name="Enviar" value="Enviar"/><br/><br/>
-
+              <input type="button" name="Limpar" value="Limpar" onClick={this.limpar} />
+              <input type="submit" name="Enviar" value="Limpar"/><br/><br/>
               <label>Resposta: {this.state.resposta} </label>
          </form>
         )
