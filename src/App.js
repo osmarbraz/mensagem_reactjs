@@ -60,7 +60,7 @@ class FrmMensagem extends Component {
             <input type="text" name="mensagem" value={this.state.mensagem} onChange={this.handleInputChange}/>
             </label><br/>
               <input type="button" name="Limpar" value="Limpar" onClick={this.limpar} />
-              <input type="submit" name="Enviar" value="Limpar"/><br/><br/>
+              <input type="submit" name="Enviar" value="Enviar"/><br/><br/>
               <label>Resposta: {this.state.resposta} </label>
          </form>
         )
